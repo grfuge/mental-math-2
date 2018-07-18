@@ -1,0 +1,130 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; 
+}
+
+::selection {
+  background: rgb(213, 162, 255);
+}
+
+body {
+  background: #111;
+  color: #eee;
+  font-family: 'Source Sans Pro';
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.container--title {
+  padding-top: 128px;
+  display: block;
+}
+
+.question {
+  font-size: 1.5em;
+  padding-bottom: 16px;
+}
+
+.settings {
+  margin-left: 96px;
+}
+
+.answer {
+  background: #333;
+  color: #eee;
+  font-size: 1.2em;
+  border: 1px solid #444;
+  padding: 4px 8px;
+  outline: none;
+}
+
+.answer:focus {
+  border: 1px solid #555;
+}
+
+.difficulty {
+  -webkit-appearance: none;
+  background: #333;
+  color: #eee;
+  font-size: 1.1em;
+  border: 1px solid #444;
+  padding: 4px 8px;
+  outline: none;
+  position: relative;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.difficulty:hover {
+  background: #444;
+  cursor: pointer;
+}
+
+.operations {
+  display: flex;
+  margin-top: 16px;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  background: #333;
+  border: 1px solid #444;
+  outline: none;
+  border-radius: 3px;
+}
+
+.checkbox:hover {
+  background: #444;
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  background: rgb(213, 162, 255);
+}
+
+.checkbox-label {
+  display: block;
+  text-align: center;
+  font-weight: 1em;
+}
+
+.score {
+  display: flex;
+}
+
+.score p {
+  width: 25%;
+}
+
+.clear {
+  width: 50% !important;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.clear-btn {
+  background: #333;
+  border: 1px solid #444;
+  box-sizing: border-box;
+  padding: 4px;
+}
+
+.clear-btn:hover {
+  cursor: pointer;
+  background: #444;
+}

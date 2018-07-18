@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <title>Mental Math</title>
+</head>
+<body>
+  <div class="container container--title">
+    <h2>Mental Math</h2>
+  </div>
+  <div class="container">
+
+    <div class="main">
+
+      <div class="question"></div>
+      <input type="number" class="answer">
+      <div class="score">
+        <p>&#10003; <span class="score-correct"></span></p>
+        <p>&#10060; <span class="score-incorrect"></span></p>
+        <p class="clear"><span class="clear-btn">Clear Score</span></p>
+      </div>
+
+      <div class="result"></div>
+
+    </div>
+
+    <div class="settings">
+
+      <div class="operations">
+        
+        <div class="checkbox-item">
+          <label for="addition" class="checkbox-label">+</label>
+          <input type="checkbox" class="checkbox checkbox-addition" value="addition" checked="true">
+        </div>
+
+        <div class="checkbox-item">
+          <label for="subtraction" class="checkbox-label">-</label>
+          <input type="checkbox" class="checkbox checkbox-subtraction" value="subtraction">
+        </div>
+
+        <div class="checkbox-item">
+          <label for="multiplication" class="checkbox-label">&#215;</label>
+          <input type="checkbox" class="checkbox checkbox-multiplication" value="multiplication">
+        </div>
+
+        <div class="checkbox-item">
+          <label for="division" class="checkbox-label">&#247;</label>
+          <input type="checkbox" class="checkbox checkbox-division" value="division">
+        </div>
+
+      </div>
+
+      <select class="difficulty">
+        <option value="easy" class="difficulty-easy"  selected="true">Easy</option>
+        <option value="medium" class="difficulty-medium">Medium</option>
+        <option value="hard" class="difficulty-hard">Hard</option>
+      </select>
+
+    </div>
+
+  </div>
+  
+  <script src="./js/controllers/AppController.js"></script>
+</body>
+</html>
